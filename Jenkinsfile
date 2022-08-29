@@ -41,6 +41,10 @@ pipeline {
 			}
 		}
 
+		stage(publish) {
+			sh 'aws s3 cp Dockerrun.aws.json s3://$AWS_S3_BUCKET/'
+		}
+
         stage('Deploy') {
             steps {
                 sh 'aws configure set region us-east-2'
