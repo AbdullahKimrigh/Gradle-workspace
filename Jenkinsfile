@@ -19,6 +19,7 @@ pipeline {
 			steps {
 				sh 'chmod +x ./gradlew'
 				sh './gradlew clean'
+				sh './gradlew compilejava'
 				sh './gradlew build'
 			}
 		}
