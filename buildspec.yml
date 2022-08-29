@@ -22,7 +22,7 @@ phases:
     on-failure: ABORT
     commands:
     - echo Build start on 'date'
-    - mv build/libs/*.jar ROOT.jar
+    - mv build/libs/demo-0.0.1-SNAPSHOT.jar ROOT.jar
     - echo Build ends on 'date'
 
 artifacts:
