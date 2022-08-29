@@ -17,8 +17,8 @@ pipeline {
 
 		stage('mvn build') {
 			steps {
-				sh './gradlew clean'
-				sh './gradlew build'
+				sh 'gradle clean'
+				sh 'gradle build'
 			}
 		}
 
