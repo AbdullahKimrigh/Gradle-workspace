@@ -9,21 +9,21 @@ phases:
     on-failure: ABORT
     commands:
     - echo Build start on 'date'
+    - chmod +x ./gradlew
     - ./gradlew clean
-    - ./gradlew validate
     - echo Build ends on 'date'
   build:
     on-failure: ABORT
     commands:
     - echo Build start on 'date'
-    - mv./gradlewn compile
+    - ./gradlewn compilejava
     - ./gradlew test
     - echo Build ends on 'date'
   post_build:
     on-failure: ABORT
     commands:
     - echo Build start on 'date'
-    - ./gradlew package
+    - ./gradlew build
     - mv build/libs/*.jar ROOT.jar
     - echo Build ends on 'date'
 
