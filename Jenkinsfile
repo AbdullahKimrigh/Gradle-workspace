@@ -6,7 +6,7 @@ pipeline {
 		DOCKERHUB_CREDENTIALS=credentials('Abdullah-Dockerhub')
 		AWS_ACCESS_KEY_ID     = credentials('jenkins-aws-secret-key-id')
   		AWS_SECRET_ACCESS_KEY = credentials('jenkins-aws-secret-access-key')
-		ARTIFACT_NAME = 'gradle-Dockerrun.aws.json'
+		ARTIFACT_NAME = 'Dockerrun.aws.json'
 		AWS_S3_BUCKET = 'java-gradle-app'
 		AWS_EB_APP_NAME = 'java-gradle-app'
         AWS_EB_ENVIRONMENT_NAME = 'Javagradleapp-env'
